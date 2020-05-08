@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 image = cv2.imread('search/fishing2.jpg',0)
-template = cv2.imread('search/float.jpg',0)
+template = cv2.imread('search/float2.jpg',0)
 
-orb = cv2.ORB(1000, 1.2)
+orb = cv2.ORB_create()
 
 kp1, des1 = orb.detectAndCompute(image, None)
 kp2, des2 = orb.detectAndCompute(template, None)
