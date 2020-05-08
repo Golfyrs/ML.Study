@@ -5,7 +5,7 @@ image = cv2.imread('corner_detection/sample.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 gray = np.float32(gray)
 
-corners = cv2.goodFeaturesToTrack(gray, 0, 0.15, 10)
+corners = cv2.goodFeaturesToTrack(gray, 0, 0.15, 0)
 corners = np.int0(corners)
 
 for corner in corners:
